@@ -966,6 +966,39 @@
     letter-spacing: 0.01em;
   }
 
+  /* Sonia company links */
+  .sonia-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  .sonia-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 46px;
+    padding: 11px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--accent-soft);
+    background: #fff7f7;
+    color: #884545;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background var(--t), border-color var(--t), box-shadow var(--t);
+  }
+  .sonia-links a:first-child { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .sonia-links a:hover { background: #f3dada; border-color: var(--accent); box-shadow: var(--shadow); }
+  .sonia-links a:first-child:hover { background: #3b3030; border-color: #3b3030; }
+  .sonia-links a:focus-visible { outline: 3px solid #884545; outline-offset: 4px; }
+  .sonia-links svg { flex-shrink: 0; }
+  @media (max-width: 480px) {
+    .sonia-links a { flex: 1 1 180px; }
+  }
+
   /* Work action: links or thumb */
   .work-action {
     display: flex;
@@ -1304,6 +1337,16 @@
             <div class="work-skills">
               <span>Growth Strategy</span><span>Lifecycle Marketing</span><span>Customer Segmentation</span><span>GA4</span><span>Creator Marketing</span>
             </div>
+            <nav class="sonia-links" aria-label="Sonia AI links">
+              <a href="https://soniahealth.com" target="_blank" rel="noopener noreferrer" aria-label="Sonia AI official website (opens in a new tab)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg>
+                Official Website <span aria-hidden="true">↗</span>
+              </a>
+              <a href="https://www.instagram.com/talktosonia/" target="_blank" rel="noopener noreferrer" aria-label="Sonia AI Instagram (opens in a new tab)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                Instagram <span aria-hidden="true">↗</span>
+              </a>
+            </nav>
           </div>
         </article>
 
