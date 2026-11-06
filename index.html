@@ -971,9 +971,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    margin-top: 22px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
   }
   .sonia-links a {
     display: inline-flex;
@@ -1320,7 +1317,7 @@
 
       <div class="work-list">
         <article class="work-card" id="sonia-experience">
-          <div class="work-main" style="grid-column: 1 / -1;">
+          <div class="work-main">
             <div class="work-meta">
               <div>
                 <span class="work-company">Sonia AI (Y Combinator W24)</span>
@@ -1337,7 +1334,8 @@
             <div class="work-skills">
               <span>Growth Strategy</span><span>Lifecycle Marketing</span><span>Customer Segmentation</span><span>GA4</span><span>Creator Marketing</span>
             </div>
-            <nav class="sonia-links" aria-label="Sonia AI links">
+          </div>
+          <nav class="work-action sonia-links" aria-label="Sonia AI links">
               <a href="https://soniahealth.com" target="_blank" rel="noopener noreferrer" aria-label="Sonia AI official website (opens in a new tab)">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg>
                 Official Website <span aria-hidden="true">↗</span>
@@ -1346,8 +1344,7 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
                 Instagram <span aria-hidden="true">↗</span>
               </a>
-            </nav>
-          </div>
+          </nav>
         </article>
 
         <article class="work-card">
